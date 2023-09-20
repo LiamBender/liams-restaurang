@@ -4,26 +4,37 @@
     padding: 0;
   }
 
-  body {
+html {
+    height: 100%;
+  }
+
+body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(92, 83, 70);
     color: rgb(255, 255, 240);
+    height: 100%;
   }
   
 nav {
     background-color: rgb(92, 83, 70);
     padding: 20px;
     z-index: 1;
+    top: 0;
+    width: 100%;
+    position: sticky;
 }
+
 ul {
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
 
 }
+
 li {
     padding-right: 25px;
 }
+
 li a {
     text-decoration:none;
     color: rgb(255, 255, 240);
@@ -31,39 +42,53 @@ li a {
     font-weight: bold;
     transition: 0.3s;
 }
+
 li a:hover {
     color: rgb(218, 165, 32);
 }
 
 header {
     text-align: center;
-    width: 100%;
+    position: relative;
 }
-header img {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-    vertical-align: top;
+
+ header .header-image {
+    opacity: 0.4;
+    background-image: url("images/headerrestaurant.jpg");
+    min-height: 900px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ header .header-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+}
+
+div.content {
+    margin-top: 20px;
 }
 
 section {
     text-align: center;
+    background-color: black;
+    position: relative;
 }
 
 footer {
     text-align: center;
+    background-color: black;
+    position: relative;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sidePadding {
+div.side-padding {
     padding-inline: 20px;
   }
 
-  .image-overlay {
+div.image-overlay {
     background-color: black;
   }
