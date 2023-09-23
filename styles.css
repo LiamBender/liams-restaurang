@@ -26,9 +26,9 @@ nav {
     justify-content: space-between;
 }
 
-nav button {
+button {
     padding: 10px 30px;
-    background-color: rgb(109, 5, 40);
+    background-color: rgb(109, 5, 28);
     color: rgb(255, 255, 240);
     font-size: 16px;
     font-weight: bold;
@@ -36,8 +36,8 @@ nav button {
     transition: 0.3s;
 }
 
-nav button:hover, header button:hover {
-    background-color: rgb(83, 4, 30);
+button:hover {
+    background-color: rgb(82, 4, 21);
 }
 
 ul {
@@ -89,17 +89,7 @@ header {
 header .header-info button {
     padding: 15px 50px;
     margin-top: 55px;
-    background-color: rgb(109, 5, 40);
-    color: rgb(255, 255, 240);
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    transition: 0.3s;
 }
-header .header-info button:hover {
-    background-color: rgb(83, 4, 30);
-}
-
 
 div.content {
     display: flex;
@@ -112,14 +102,68 @@ section {
     background-color: black;
     position: relative;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin-bottom: 20px;
     flex-basis: 100%;
 }
 
+.dishes-display {
+    position: absolute;
+    bottom: 15px;
+    text-align: left;
+    margin: 15px;
+}
+
+.our-menu {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    text-align: right;
+    margin: 15px;
+}
+
+.our-menu button {
+    background-color: rgb(255, 255, 240);
+    color: rgb(109, 5, 28);
+}
+
+.our-menu button:hover {
+    background-color: rgb(163, 163, 152);
+}
+
+.dishes-display button {
+    margin-top: 25px;
+}
+
+.dishes-image-one {
+    opacity: 0.6;
+    background-image: url("images/specialpizza.jpg");
+    min-height: 400px; 
+    background-size:cover; 
+	background-position:center; 
+	background-repeat:no-repeat; 
+}
+
+.dishes-image-two {
+    opacity: 0.6;
+    background-image: url("images/salmon.jpg");
+    min-height: 400px; 
+    background-size:cover; 
+	background-position:center; 
+	background-repeat:no-repeat; 
+}
+
+section p {
+    text-align: right;
+    margin: 15px;
+}
+
+section:first-child h1 {
+    text-align: right;
+    margin: 15px;
+}
+
 section:first-child{
-    background-color: rgb(109, 5, 40);
+    background-color: rgb(109, 5, 28);
 }
 
 footer {
