@@ -140,7 +140,7 @@ section {
     min-height: 400px; 
     background-size:cover; 
 	background-position:center; 
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 }
 
 .dishes-image-two {
@@ -180,4 +180,72 @@ div.side-padding {
 
 div.image-overlay {
     background-color: black;
+  }
+
+  @media only screen and (max-width: 815px) {
+    div.content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-menu {
+        position: relative;
+        bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    li {
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    header .header-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40%;
+        font-size: 25px;
+    }
+
+    header .header-image {
+        opacity: 0.4;
+        background-image: url("images/headerrestaurant.jpg");
+        min-height: 500px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div.side-padding {
+        padding-inline: 0;
+      }
+  }
+
+  @media only screen and (max-width: 430px) {
+    header .header-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 33%;
+        font-size: 15px;
+    }
   }
