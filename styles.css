@@ -167,11 +167,31 @@ section:first-child{
 }
 
 footer {
-    text-align: center;
     background-color: black;
+    color:rgb(255, 255, 240);
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+footer .footer-info-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .footer-info {
+    text-align: center;
+}
+
+footer .footer-info p {
+    text-align: left;
+}
+
+footer .footer-socials {
+    gap: 10px;
+    font-size: 30px;
 }
 
 div.side-padding {
@@ -180,6 +200,23 @@ div.side-padding {
 
 div.image-overlay {
     background-color: black;
+  }
+
+  @media only screen and (max-width: 900px) {
+    footer .footer-info-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .footer-info {
+        margin: 15px;
+    }
+
+    footer .footer-info p {
+        text-align: center;
+    }
   }
 
   @media only screen and (max-width: 815px) {
