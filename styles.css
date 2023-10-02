@@ -152,17 +152,17 @@ section {
 	background-repeat:no-repeat; 
 }
 
-section p {
+.content section p {
     text-align: right;
     margin: 15px;
 }
 
-section:first-child h1 {
+.content section:first-child h1 {
     text-align: right;
     margin: 15px;
 }
 
-section:first-child{
+.content section:first-child{
     background-color: rgb(109, 5, 28);
 }
 
@@ -286,3 +286,16 @@ div.image-overlay {
         font-size: 15px;
     }
   }
+
+  /* Menu.html specific css */
+.menu-selection button {
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+.menu-selection button:hover {
+    color: rgb(218, 165, 32);
+}
+
+div.menu-info section {
+    background-color: transparent;
+}
