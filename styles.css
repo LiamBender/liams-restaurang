@@ -288,9 +288,14 @@ div.image-overlay {
   }
 
   /* Menu.html specific css */
+.menu-selection {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
 .menu-selection button {
     background-color: transparent;
-    margin-bottom: 50px;
 }
 .menu-selection button:hover {
     color: rgb(218, 165, 32);
@@ -298,4 +303,69 @@ div.image-overlay {
 
 div.menu-info section {
     background-color: transparent;
+}
+
+div.food-container {
+    margin-top: 50px;
+}
+
+div.food-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    text-align: left;
+}
+
+div.food-list h2 {
+    color: rgb(218, 165, 32);
+}
+
+/* contact.html specific css */
+
+aside {
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 240);
+    margin-bottom: 20px;
+    width: 50%;
+}
+aside div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-image {
+    opacity: 0.4;
+    background-image: url("images/contactrestaurant.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.contact-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+}
+
+div.contact-info form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 250px;
+}
+
+div.contact-info form label {
+    text-align: left;
+}
+
+div.contact-info form textarea {
+    height: 150px
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
