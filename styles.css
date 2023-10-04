@@ -362,7 +362,12 @@ div.contact-info form label {
 }
 
 div.contact-info form textarea {
-    height: 150px
+    resize: none;
+}
+
+div.contact-info form input, textarea {
+    border-radius: 5px;
+    margin: 5px 0;
 }
 
 .container {
