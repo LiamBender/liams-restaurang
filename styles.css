@@ -329,15 +329,38 @@ aside {
     width: 50%;
 }
 aside div {
+    margin: 25px 15px;
+}
+
+aside div div {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+}
+
+aside h3 {
+    padding: 5px;
+}
+
+header .header-contact-image {
+    opacity: 0.4;
+    background-image: url("images/contactheader.jpg");
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .header-contact-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+    font-size: 40px;
 }
 
 .contact-image {
     opacity: 0.4;
     background-image: url("images/contactrestaurant.jpg");
-    min-height: 500px; 
+    min-height: 450px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -368,9 +391,4 @@ div.contact-info form textarea {
 div.contact-info form input, textarea {
     border-radius: 5px;
     margin: 5px 0;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
 }
