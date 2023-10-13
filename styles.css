@@ -392,3 +392,59 @@ div.contact-info form input, textarea {
     border-radius: 5px;
     margin: 5px 0;
 }
+
+/* about.html specific css */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+section.about-section {
+    margin-bottom: 0px;
+}
+
+.our-story-image {
+    opacity: 0.4;
+    background-image: url("images/ourstory.jpg");
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-are-we-image {
+    opacity: 0.4;
+    background-image: url("images/whoarewe.jpg");
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.meet-chef-image {
+    opacity: 0.4;
+    background-image: url("images/meetourchef.jpg");
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.about-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    margin: 0 15px;
+    text-align: left;
+}
+
+div.about-info h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
