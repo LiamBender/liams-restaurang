@@ -1,5 +1,6 @@
 # Liams Restaurang
 Liams Restaurang is a website for a fictional restaurant.
+Keep in mind that this project is not finished yet!
 
 ## About
 A simple website for a fictional restaurant.
