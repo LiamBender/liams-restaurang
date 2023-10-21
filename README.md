@@ -11,7 +11,7 @@ A simple website for a fictional restaurant.
 - Contact information
 - Information about the restaurant
 
-#### Future features
+### Future features
 - Reservations
 - Stay in touch button working
 - All pages will be responsive
@@ -22,8 +22,6 @@ A simple website for a fictional restaurant.
 - CSS
 - Javascript
 - [Font Awesome](https://fontawesome.com/)
-  
-## Usage
 
 #### Installation
 To run this application, all you need to do is clone the project and run it in HTML.
