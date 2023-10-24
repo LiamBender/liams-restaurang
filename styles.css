@@ -376,7 +376,7 @@ header .header-contact-info {
 .contact-image {
     opacity: 0.4;
     background-image: url("images/contactrestaurant.jpg");
-    min-height: 450px; 
+    min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -384,6 +384,8 @@ header .header-contact-info {
 }
 
 div.contact-info {
+    display: flex;
+    justify-content: center;
     position: absolute;
     left: 0;
     right: 0;
@@ -393,7 +395,8 @@ div.contact-info {
 div.contact-info form {
     display: flex;
     flex-direction: column;
-    margin-inline: 250px;
+    width: 350px;
+    height: auto;
 }
 
 div.contact-info form label {
@@ -407,6 +410,62 @@ div.contact-info form textarea {
 div.contact-info form input, textarea {
     border-radius: 5px;
     margin: 5px 0;
+}
+
+@media only screen and (max-width: 1325px) {
+    .contact-image {
+        min-height: 600px; 
+    }
+
+    aside div div {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .contact-image {
+        min-height: 750px; 
+    }
+}
+
+@media only screen and (max-width: 863px) {
+    .contact-image {
+        min-height: 850px; 
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    aside {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .contact-image {
+        min-height: 450px; 
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    header .header-contact-info {
+        bottom: 40%;
+        font-size: 25px;
+    }
+
+    div.contact-info form {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+
+    header .header-contact-info {
+        bottom: 35%;
+    }
+
+    div.contact-info form {
+        width: 200px;
+    }
 }
 
 /* about.html specific css */
