@@ -464,3 +464,122 @@ div.about-info h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 1240px) {
+    div.about-info p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    div.about-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2%;
+        margin: 0 15px;
+        text-align: left;
+    }
+
+    div.about-info h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .our-story-image {
+        min-height: 550px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 550px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 550px; 
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    div.about-info h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    div.about-info p {
+        font-size: 12px;
+    }
+
+    .our-story-image {
+        min-height: 500px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 500px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 500px; 
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+    .our-story-image {
+        min-height: 600px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 600px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 600px; 
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .our-story-image {
+        min-height: 800px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 800px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 800px; 
+    }
+
+}
+
+@media only screen and (max-width: 345px) {
+    .our-story-image {
+        min-height: 950px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 950px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 950px; 
+    }
+
+}
+
+@media only screen and (max-width: 295px) {
+    .our-story-image {
+        min-height: 1250px; 
+    }
+    
+    .who-are-we-image {
+        min-height: 1250px; 
+    }
+    
+    .meet-chef-image {
+        min-height: 1250px; 
+    }
+
+}
