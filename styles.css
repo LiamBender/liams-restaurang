@@ -389,7 +389,7 @@ div.contact-info {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 25%;
+    bottom: 20%;
 }
 
 div.contact-info form {
@@ -408,9 +408,26 @@ div.contact-info form textarea {
 }
 
 div.contact-info form input, textarea {
-    border-radius: 5px;
+    padding: 10px;
     margin: 5px 0;
+    background: transparent;
+    border-style: solid;
+    color: rgb(255, 255, 255);
 }
+
+div.contact-info div{
+    display: flex;
+    flex-direction: row;
+}
+
+div.contact-info div div{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+::placeholder {
+    opacity: 1;
+  }
 
 @media only screen and (max-width: 1325px) {
     .contact-image {
@@ -426,11 +443,24 @@ div.contact-info form input, textarea {
     .contact-image {
         min-height: 750px; 
     }
+
+    div.contact-info {
+        bottom: 33%;
+    }
+
+    div.contact-info div{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 863px) {
     .contact-image {
         min-height: 850px; 
+    }
+
+    div.contact-info {
+        bottom: 25%;
     }
 }
 
@@ -442,6 +472,10 @@ div.contact-info form input, textarea {
 
     .contact-image {
         min-height: 450px; 
+    }
+
+    div.contact-info {
+        bottom: 7.5%;
     }
 }
 
