@@ -5,14 +5,14 @@
 }
 
 html {
-    height: 100%;
+    height: auto;
 }
 
 body {
     font-family: 'Merienda';
     background-color: rgb(92, 83, 70);
     color: rgb(255, 255, 240);
-    height: 100%;
+    height: auto;
 }
 
 nav {
