@@ -2,19 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 html {
     height: 100%;
-  }
+}
 
 body {
     font-family: 'Merienda';
     background-color: rgb(92, 83, 70);
     color: rgb(255, 255, 240);
     height: 100%;
-  }
-  
+}
+
 nav {
     background-color: rgb(92, 83, 70);
     padding: 20px;
@@ -52,7 +52,7 @@ li {
 }
 
 li a {
-    text-decoration:none;
+    text-decoration: none;
     color: rgb(255, 255, 240);
     font-size: 24px;
     font-weight: bold;
@@ -68,17 +68,17 @@ header {
     position: relative;
 }
 
- header .header-image {
+header .header-image {
     opacity: 0.4;
     background-image: url("images/headerrestaurant.jpg");
-    min-height: 900px; 
+    min-height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
- header .header-info {
+header .header-info {
     position: absolute;
     left: 0;
     right: 0;
@@ -137,19 +137,19 @@ section {
 .dishes-image-one {
     opacity: 0.6;
     background-image: url("images/specialpizza.jpg");
-    min-height: 400px; 
-    background-size:cover; 
-	background-position:center; 
-	background-repeat:no-repeat;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .dishes-image-two {
     opacity: 0.6;
     background-image: url("images/salmon.jpg");
-    min-height: 400px; 
-    background-size:cover; 
-	background-position:center; 
-	background-repeat:no-repeat; 
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content section p {
@@ -162,13 +162,13 @@ section {
     margin: 15px;
 }
 
-.content section:first-child{
+.content section:first-child {
     background-color: rgb(109, 5, 28);
 }
 
 footer {
     background-color: black;
-    color:rgb(255, 255, 240);
+    color: rgb(255, 255, 240);
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -196,13 +196,13 @@ footer .footer-socials {
 
 div.side-padding {
     padding-inline: 20px;
-  }
+}
 
 div.image-overlay {
     background-color: black;
-  }
+}
 
-  @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     footer .footer-info-container {
         display: flex;
         flex-direction: column;
@@ -217,9 +217,9 @@ div.image-overlay {
     footer .footer-info p {
         text-align: center;
     }
-  }
+}
 
-  @media only screen and (max-width: 815px) {
+@media only screen and (max-width: 815px) {
     div.content {
         display: flex;
         flex-direction: column;
@@ -251,9 +251,9 @@ div.image-overlay {
         padding-right: 0;
         margin-bottom: 5px;
     }
-  }
+}
 
-  @media only screen and (max-width: 630px) {
+@media only screen and (max-width: 630px) {
     header .header-info {
         position: absolute;
         left: 0;
@@ -265,7 +265,7 @@ div.image-overlay {
     header .header-image {
         opacity: 0.4;
         background-image: url("images/headerrestaurant.jpg");
-        min-height: 500px; 
+        min-height: 500px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -274,10 +274,10 @@ div.image-overlay {
 
     div.side-padding {
         padding-inline: 0;
-      }
-  }
+    }
+}
 
-  @media only screen and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
     header .header-info {
         position: absolute;
         left: 0;
@@ -285,9 +285,9 @@ div.image-overlay {
         bottom: 33%;
         font-size: 15px;
     }
-  }
+}
 
-  /* Menu.html specific css */
+/* Menu.html specific css */
 .menu-selection {
     display: flex;
     justify-content: center;
@@ -299,6 +299,7 @@ div.image-overlay {
 .menu-selection button {
     background-color: transparent;
 }
+
 .menu-selection button:hover {
     color: rgb(218, 165, 32);
 }
@@ -339,11 +340,12 @@ div.food-list h2 {
 /* contact.html specific css */
 
 aside {
-    background-color:rgb(0, 0, 0);
-    color:rgb(255, 255, 240);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 240);
     margin-bottom: 20px;
     width: 50%;
 }
+
 aside div {
     margin: 25px 15px;
 }
@@ -359,7 +361,7 @@ aside h3 {
 header .header-contact-image {
     opacity: 0.4;
     background-image: url("images/contactheader.jpg");
-    min-height: 500px; 
+    min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -376,7 +378,7 @@ header .header-contact-info {
 .contact-image {
     opacity: 0.4;
     background-image: url("images/contactrestaurant.jpg");
-    min-height: 450px; 
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -404,63 +406,41 @@ div.contact-info form textarea {
     resize: none;
 }
 
-div.contact-info form input, textarea {
+div.contact-info form input,
+textarea {
     border-radius: 5px;
     margin: 5px 0;
 }
 
 /* about.html specific css */
 
-.about-container {
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section:nth-of-type(2) .about-row {
+    flex-direction: row-reverse;
+  }
+
+.about-row {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
 }
 
-section.about-section {
-    margin-bottom: 0px;
+.about-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
-.our-story-image {
-    opacity: 0.4;
-    background-image: url("images/ourstory.jpg");
-    min-height: 450px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.who-are-we-image {
-    opacity: 0.4;
-    background-image: url("images/whoarewe.jpg");
-    min-height: 450px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.meet-chef-image {
-    opacity: 0.4;
-    background-image: url("images/meetourchef.jpg");
-    min-height: 450px; 
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-div.about-info {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 5%;
-    margin: 0 15px;
+.about-info {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: left;
 }
 
-div.about-info h1 {
-    text-align: center;
+.about-info h1 {
     margin-bottom: 20px;
 }
